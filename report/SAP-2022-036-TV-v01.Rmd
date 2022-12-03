@@ -54,7 +54,7 @@ kable(history)
 ```
 
 ```{r cleaning, include=FALSE}
-source("scripts/input.R", encoding = 'UTF-8')
+# source("scripts/input.R", encoding = 'UTF-8')
 ```
 
 ---
@@ -76,69 +76,11 @@ Calculate the minimum sample size to be able to detect the prevalence of sleep d
 
 ## Raw data
 
-The original data base had
-`r Nvar_orig`
-variables collected on
-`r Nobs_orig`
-observations.
-
-<!-- Upon study start the raw data will be collected in a raw table, that will be processed before analysis. -->
-<!-- The raw dataset to be collected will have -->
-<!-- `r Nvar_orig` -->
-<!-- variables collected on -->
-<!-- `r Nobs_orig` -->
-<!-- observations. -->
-
-<!-- This dataset will include the dates of entry and exit of the cohort, or the date of hospital admission and the date where the endpoint was reached (either an event, or hospital discharge). -->
-<!-- Table 1 shows the structure of the raw dataset. -->
-
-<!-- ```{r analytical data} -->
-<!-- analytical_mockup %>% -->
-<!--   pander(caption = "**Table 1** Raw dataset structure.") -->
-<!-- ``` -->
-
-<!-- Each row represents all information collected from each study participant, and each participant included will require a unique study ID. -->
-<!-- The outcome should be recorded as a binary variable: either the study participant reached the endpoint -->
-<!-- ([outcome]) -->
-<!-- or reached the end of study period without experiencing the event. -->
-<!-- This information can be recorded in either text form (eg, yes/no), or an indicator -->
-<!-- ([outcome] = 1, -->
-<!-- end of observation time or discharge = 0). -->
-<!-- Exposure and all comorbidities should be recorded as binary variables, whenever possible. -->
-<!-- All comorbidities should be recorded as binary variables, whenever possible. -->
-
-<!-- Surgery length should be recorded in -->
-<!-- minutes, -->
-<!-- hours, -->
-<!-- and ICU length in -->
-<!-- days. -->
-<!-- weeks. -->
-<!-- months. -->
-
-<!-- Surgery type will be recorded as a categorical variable. -->
-<!-- It is recommended that the number of classes (types of surgery) be as small as possible, to avoid loss of precision in the analysis estimates, without the need to increase the sample size. -->
-<!-- Broader categories of surgeries should be preferred, whenever possible. -->
+N/A
 
 ## Analytical dataset
 
-<!-- After the cleaning process -->
-<!-- `r Nvar_final` -->
-<!-- variables were included in the analysis -->
-<!-- with -->
-<!-- `r Nobs_final` -->
-<!-- observations. -->
-After the cleaning process
-`r Nvar_final`
-variables were included in the analysis.
-The total number of observations excluded due to incompleteness and exclusion criteria will be reported in the analysis.
-Table 1 shows the structure of the analytical dataset.
-
-```{r analytical data}
-analytical_mockup %>%
-  pander(caption = "**Table 1** Analytical dataset structure after variable selection and cleaning.")
-```
-
-All variables in the analytical set were labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
+N/A
 
 # Study parameters
 
@@ -161,44 +103,28 @@ All variables in the analytical set were labeled according to the raw data provi
 
 ## Covariates
 
+N/A
+
 # Statistical methods
 
 ## Statistical analyses
 
 ### Descriptive analyses
 
-The epidemiological profile of the study participants will be described.
-Demographic
-(sex, age and BMI)
-and clinical variables
-<!-- ( [vars] ) -->
-will be described as
-mean (SD)
-<!-- median (IQR) -->
-or as counts and proportions (%), as appropriate.
-The distributions of participants' characteristics will be summarized in tables and visualized in exploratory plots.
+N/A
 
 ### Inferential analyses
 
-All comparisons between groups will be performed as univariate analyses.
-Continuous variables will be compared between groups with the
-independent t test with Welch correction.
-<!-- paired t test. -->
-<!-- Mann-Whitney test. -->
-<!-- signed rank Wilcoxon test. -->
-Differences in distribution of categorical variables will be assessed with the
-Fisher exact test.
-<!-- chi-square test. -->
-<!-- McNemar test. -->
-
-<!-- All inferential analyses will be performed in the statistical models (described in the next section). -->
+N/A
 
 ### Statistical modeling
+
+N/A
 
 ### Missing data
 
 No missing data imputation will be performed.
-All evaluations will be performed as complete case analyses.
+<!-- All evaluations will be performed as complete case analyses. -->
 
 ## Significance and Confidence Intervals
 
@@ -211,32 +137,8 @@ two-tailed.
 ## Study size and Power
 
 ```{r}
-n <- analytical %>%
-  count(exposure) %>%
-  pull(n)
-n1 <- n[1]
-n2 <- n[2]
-total <- sum(n)
-d <- pwr::pwr.t2n.test(n1 = n1, n2 = n2, power = .8, sig.level = .05)$d %>%
-  format.float()
-d <- pwr::pwr.t.test(n = total/2, power = .8, sig.level = .05)$d %>%
-  format.float()
-
 ss <- epi.sssimpleestb(N = 3899, Py = .2, epsilon = .5, se = .896, sp = .9)
 ```
-
-<!-- Study groups were balanced and the total sample size was `r total` including all groups. -->
-
-<!-- Study groups were not balanced with -->
-<!-- group1 with `r n1` participants -->
-<!-- and -->
-<!-- group2 with `r n2` participants -->
-<!-- with a total study size of `r total`. -->
-<!-- This power analysis adjusts for different group sizes. -->
-
-<!-- With these group sizes a t test can detect an effect size as large as -->
-<!-- **d = `r d`** -->
-<!-- with 80% power and 5% significance level (Cohen, 1988). -->
 
 N/A
 
