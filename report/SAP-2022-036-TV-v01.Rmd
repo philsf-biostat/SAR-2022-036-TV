@@ -73,6 +73,8 @@ source("scripts/input.R", encoding = 'UTF-8')
 
 ## Objectives
 
+Calculate the minimum sample size to be able to detect the prevalence of sleep disturbance as measured by the Pittsburgh Sleep Quality Index in Judo athletes.
+
 ## Hypotheses
 
 # Data

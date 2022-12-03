@@ -1,6 +1,6 @@
 # Sample size calculation for prevalence of sleep disturbance in senior Judo athletes in Canada
 
-Objective
+Calculate the minimum sample size to be able to detect the prevalence of sleep disturbance as measured by the Pittsburgh Sleep Quality Index in Judo athletes.
 
 Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 2022)
 <!-- Technical Report for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 2022) -->
