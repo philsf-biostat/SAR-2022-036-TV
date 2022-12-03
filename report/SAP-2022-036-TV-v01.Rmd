@@ -141,7 +141,7 @@ N <- 3899
 Py <- .2
 epsilon <- .5
 se <- .896
-sp <- .9
+sp <- .865
 ss <- epi.sssimpleestb(N = N, Py = Py, epsilon = epsilon, se = se, sp = sp)
 ```
 
