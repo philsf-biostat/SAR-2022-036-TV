@@ -1,6 +1,6 @@
 ---
 title: 'Sample size calculation for prevalence of sleep disturbance in competitive senior level judo athletes in Canada'
-date: "2022-12-03"
+date: "2022-12-04"
 permalink: /portfolio/SAR-2022-036/
 redirect_from:
   - /portfolio/SAR-2022-036-TV/
