@@ -150,14 +150,28 @@ two-tailed.
 
 ## Study size and Power
 
-```{r}
+```{r params}
 N <- 3899
 Py <- .2
 epsilon <- .5
 se <- .896
 sp <- .865
 ss <- epi.sssimpleestb(N = N, Py = Py, epsilon = epsilon, se = se, sp = sp)
+```
 
+The sample size calculation was done using the method described in Humphry (2004), which adjusts for imperfect diagnostic sensitivity and specificity.
+The parameters used in the calculation are shown in Table 1.
+The target population accounted for `r N` senior competitive judo athletes in November, 2022.
+Considering the hypothesized
+`r Py|> philsfmisc::format.pct(0)`
+true population prevalence the tolerance of
+`r epsilon|> philsfmisc::format.pct(0)`
+around this hypothesized value which would give a 95% CI of
+`r (Py - Py*epsilon) |> philsfmisc::format.pct(0)`
+to
+`r (Py + Py*epsilon) |> philsfmisc::format.pct(0)`.
+
+```{r tab1}
 tibble(
   Parameter = c(
     "Target population size (chosen)",
@@ -180,7 +194,12 @@ tibble(
   )
 ```
 
-- Sample size (calculated): `r ss`
+Assuming a
+sensitivity of `r se|> philsfmisc::format.pct()`
+and a specificity of `r sp|> philsfmisc::format.pct()`,
+the sample size calculated of `r ss` is sufficient to detect a
+prevalence of `r epsilon|> philsfmisc::format.pct(0)` in the target population,
+within the specified tolerance.
 
 ## Statistical packages
 
