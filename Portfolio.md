@@ -36,8 +36,8 @@ tags:
 
 Objective
 
-Statistical Analysis for PERSON (PLACE, yyyy)
-<!-- Technical Report for  PERSON (PLACE, yyyy) -->
+Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 2022)
+<!-- Technical Report for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 2022) -->
 
 ## Analyses performed
 
