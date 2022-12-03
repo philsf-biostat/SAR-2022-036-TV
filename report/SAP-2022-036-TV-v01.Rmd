@@ -77,6 +77,8 @@ It is hypothesized that the prevalence of sleep disorders is high in competitive
 
 # Data
 
+No data analysis is planned at this stage.
+
 ## Raw data
 
 N/A
@@ -97,7 +99,7 @@ Professional judo athletes aged 18+ years old will be included.
 
 ## Exposures
 
-N/A
+As this is a single-arm study, no exposures were defined for the prevalence calculation.
 
 ## Outcomes
 
@@ -120,6 +122,8 @@ N/A
 
 ## Statistical analyses
 
+No data analysis is planned at this stage.
+
 ### Descriptive analyses
 
 N/A
@@ -134,8 +138,7 @@ N/A
 
 ### Missing data
 
-No missing data imputation will be performed.
-<!-- All evaluations will be performed as complete case analyses. -->
+N/A
 
 ## Significance and Confidence Intervals
 
