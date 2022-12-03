@@ -7,45 +7,20 @@ redirect_from:
   - /SAR-2022-036-TV/
   - /SAR-2022-036/
 categories:
-  - case-control
   - cross-sectional
-  - longitudinal-studies
-  - cohort
-  - clinical-trial
-  - ecological
   - epidemiology
-  - bioassay
-  - systematic-review
-  - technical-report
-  - data-product
 tags:
   - prevalence
-  - incidence
-  - diagnostic-models
-  - prognostic-models
-  - survival-analysis
-  - efficacy
-  - concordance-analysis
-  - survey
-  - meta-analysis
-  - decision-trees
-  - machine-learning
-  - unsupervised-learning
-  - data-instrument
 ---
 
 Objective
 
-Statistical Analysis for PERSON (PLACE, yyyy)
-<!-- Technical Report for  PERSON (PLACE, yyyy) -->
+Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 2022)
+<!-- Technical Report for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 2022) -->
 
 ## Analyses performed
 
-1. Descriptive analysis
-1. Inferential analysis
 1. Power analysis
-1. Missing data imputation
-1. Statistical models
 
 ## Documents
 
