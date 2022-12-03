@@ -33,6 +33,7 @@ panderOptions('table.style', 'rmarkdown')
 panderOptions('table.split.table', 160)
 
 library(epiR)
+library(tibble)
 
 ```
 
@@ -143,13 +144,28 @@ epsilon <- .5
 se <- .896
 sp <- .865
 ss <- epi.sssimpleestb(N = N, Py = Py, epsilon = epsilon, se = se, sp = sp)
-```
 
-- Target population size (chosen): `r N`
-- True population prevalence (assumed): `r Py |> philsfmisc::format.pct(0)`
-- Tolerance (chosen): `r epsilon |> philsfmisc::format.pct(0)`
-- Diagnostic sensitivity (chosen): `r se |> philsfmisc::format.pct()`
-- Diagnostic specificity (chosen): `r sp |> philsfmisc::format.pct()`
+tibble(
+  Parameter = c(
+    "Target population size (chosen)",
+    "True population prevalence (assumed)",
+    "Tolerance (chosen)",
+    "Diagnostic sensitivity (chosen)",
+    "Diagnostic specificity (chosen)"
+  ),
+  Value = c(
+    N |> as.character(),
+    Py|> philsfmisc::format.pct(0),
+    epsilon|> philsfmisc::format.pct(0),
+    se|> philsfmisc::format.pct(),
+    sp|> philsfmisc::format.pct()
+  )
+) |>
+  kable(
+    align = "c",
+    caption = "**Table 1** Parameters for sample size calculation."
+  )
+```
 
 - Sample size (calculated): `r ss`
 
