@@ -31,6 +31,9 @@ library(pander)
 library(knitr)
 panderOptions('table.style', 'rmarkdown')
 panderOptions('table.split.table', 160)
+
+library(epiR)
+
 ```
 
 ---
@@ -218,6 +221,8 @@ d <- pwr::pwr.t2n.test(n1 = n1, n2 = n2, power = .8, sig.level = .05)$d %>%
   format.float()
 d <- pwr::pwr.t.test(n = total/2, power = .8, sig.level = .05)$d %>%
   format.float()
+
+ss <- epi.sssimpleestb(N = 3899, Py = .2, epsilon = .5, se = .896, sp = .9)
 ```
 
 <!-- Study groups were balanced and the total sample size was `r total` including all groups. -->
