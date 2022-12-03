@@ -137,10 +137,21 @@ two-tailed.
 ## Study size and Power
 
 ```{r}
-ss <- epi.sssimpleestb(N = 3899, Py = .2, epsilon = .5, se = .896, sp = .9)
+N <- 3899
+Py <- .2
+epsilon <- .5
+se <- .896
+sp <- .9
+ss <- epi.sssimpleestb(N = N, Py = Py, epsilon = epsilon, se = se, sp = sp)
 ```
 
-N/A
+- Target population size (chosen): `r N`
+- True population prevalence (assumed): `r Py |> philsfmisc::format.pct(0)`
+- Tolerance (chosen): `r epsilon |> philsfmisc::format.pct(0)`
+- Diagnostic sensitivity (chosen): `r se |> philsfmisc::format.pct()`
+- Diagnostic specificity (chosen): `r sp |> philsfmisc::format.pct()`
+
+- Sample size (calculated): `r ss`
 
 ## Statistical packages
 
