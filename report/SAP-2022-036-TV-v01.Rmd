@@ -2,7 +2,7 @@
 title: "Sample size calculation for prevalence of sleep disturbance in senior Judo athletes in Canada"
 subtitle: 'DOCUMENT: SAP-2022-036-TV-v01'
 author: '**From:** Felipe Figueiredo **To:** Thiago Vivacqua'
-date: "`r Sys.Date()`"
+date: "2022-12-03"
 output:
   html_document:
     fig_caption: yes
