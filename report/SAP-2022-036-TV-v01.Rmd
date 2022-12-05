@@ -198,7 +198,7 @@ Assuming a
 sensitivity of `r se|> philsfmisc::format.pct()`
 and a specificity of `r sp|> philsfmisc::format.pct()`,
 the sample size calculated of `r ss` is sufficient to detect a
-prevalence of `r epsilon|> philsfmisc::format.pct(0)` in the target population,
+prevalence of `r Py|> philsfmisc::format.pct(0)` in the target population,
 within the specified tolerance.
 
 ## Statistical packages
