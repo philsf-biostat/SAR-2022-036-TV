@@ -151,7 +151,7 @@ two-tailed.
 ## Study size and Power
 
 ```{r params}
-N <- 3899
+N <- 3839
 Py <- .2
 epsilon <- .5
 se <- .896
