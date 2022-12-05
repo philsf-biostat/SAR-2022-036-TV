@@ -35,9 +35,9 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 
 - [PDF][sap]
 
-### Statistical Analysis Report (SAR)
+<!-- ### Statistical Analysis Report (SAR) -->
 
-- [PDF][sar]
+<!-- - [PDF][sar] -->
 
 <!-- ## Associated analyses -->
 
