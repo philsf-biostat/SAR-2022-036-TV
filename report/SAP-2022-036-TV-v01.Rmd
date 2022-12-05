@@ -60,6 +60,15 @@ kable(history)
 
 ---
 
+```{r params}
+N <- 3839
+Py <- .2
+epsilon <- .5
+se <- .896
+sp <- .865
+ss <- epi.sssimpleestb(N = N, Py = Py, epsilon = epsilon, se = se, sp = sp)
+```
+
 # Abbreviations
 
 - CI: confidence interval
@@ -73,7 +82,7 @@ Calculate the minimum sample size to be able to detect the prevalence of sleep d
 
 ## Hypotheses
 
-It is hypothesized that the prevalence of sleep disorders is high in competitive senior level judo athletes in Canada leading to psychological distress, on the order of 20%.
+It is hypothesized that the prevalence of sleep disorders is high in competitive senior level judo athletes in Canada leading to psychological distress, on the order of `r Py|> philsfmisc::format.pct(0)`.
 
 # Data
 
@@ -150,15 +159,6 @@ two-tailed.
 
 ## Study size and Power
 
-```{r params}
-N <- 3899
-Py <- .2
-epsilon <- .5
-se <- .896
-sp <- .865
-ss <- epi.sssimpleestb(N = N, Py = Py, epsilon = epsilon, se = se, sp = sp)
-```
-
 The sample size calculation was done using the method described in Humphry (2004), which adjusts for imperfect diagnostic sensitivity and specificity.
 The parameters used in the calculation are shown in Table 1.
 The target population accounted for `r N` senior competitive judo athletes in November, 2022.
@@ -198,7 +198,7 @@ Assuming a
 sensitivity of `r se|> philsfmisc::format.pct()`
 and a specificity of `r sp|> philsfmisc::format.pct()`,
 the sample size calculated of `r ss` is sufficient to detect a
-prevalence of `r epsilon|> philsfmisc::format.pct(0)` in the target population,
+prevalence of `r Py|> philsfmisc::format.pct(0)` in the target population,
 within the specified tolerance.
 
 ## Statistical packages
